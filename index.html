@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video Downloader</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+    <div class="col-md-7 offset-md-3 mt-5">
+        <div class="card">
+            <div class="card-header bg-dark">
+                <h5 style="color:white">Video Downloader</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="text-weight"><b>Enter Video Link :</b></label>
+                            <input type="txt" name="link" class="form-control link" required>
+                        </div>
+                    </div>
+                </div>
+                <form class="form-download mt-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="text-weight"><b>Select Video Format :</b></label>
+                                <select class="form-control format" required>
+                                    <option selected disabled>Select Video Format</option>
+                                    <option value="mp4a">144p Mp4</option>
+                                    <option value="360">360p Mp4</option>
+                                    <option value="480">480p Mp4</option>
+                                    <option value="720">720p Mp4</option>
+                                    <option value="1080">1080p Mp4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group mt-4 download-video">
+                                <button class="btn btn-success btn-block click-btn-down" type="submit">Click
+                                    Here</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/app.js"></script>
+
+</html>
